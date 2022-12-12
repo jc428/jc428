@@ -7,6 +7,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
   <link rel="stylesheet" href="./assets/css/main.css" />
+  <script src="https://kit.fontawesome.com/4c43527bd5.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -40,11 +41,12 @@
             anywhere in the U.S.
           </p>
           <p>
-            Connect with me on <a href="https://www.linkedin.com/in/jiwoo-cheon">LinkedIn</a>
+            Connect with me on <a href="https://www.linkedin.com/in/jiwoo-cheon" target="_blank"
+              rel="noopener noreferrer">LinkedIn</a>
             or email me at jc2762@cornell.edu.
           </p>
           <div id="resume">
-            <a href="./cheon_resume_fa2022.pdf">
+            <a href="./cheon_resume_fa2022.pdf" target="_blank" rel="noopener noreferrer">
               Resume
             </a>
           </div>
@@ -105,130 +107,196 @@
           </div>
         </div>
       </div>
-      <section id="projects">
-        <div class="container">
-          <h1>Projects</h1>
-          <p>Click below to learn more about some of my projects!</p>
-          <div class="accordion-wrapper">
-            <div class="accordion-item open">
-              <div class="accordion-item-heading">
+    </section>
+    <section id="projects">
+      <div class="container">
+        <h1>Projects</h1>
+        <p>Click below to learn more about some of my projects!</p>
+        <div class="accordion-wrapper">
+          <div class="accordion-item open">
+            <div class="accordion-item-heading">
+              <i class="fa-solid fa-circle-chevron-down fa-lg"></i>
+              <div class="heading-text">
                 <h3>Research on Recommender Systems</h3>
-              </div>
-              <div class="accordion-item-content">
-                <div class="project-row1">
-                  <img src="./images/predicted_vs_actual_ratings_ml_small.png" />
-                  <div class="description">
-                    <p>Machine Learning, Data Analysis, Python, Pandas</p>
-                    <p>
-                      In summer 2022 I did machine learning research at Cornell with Professor Sarah Dean.
-                      I created a graph with three node layers that represent the multiple stakeholders in a Recommender
-                      system: the providers that supply the items, the items which are recommended, and users who
-                      receive
-                      the item recommendations.
-                      I defined item and provider visibility, which is a graph-based measure that represents the
-                      number of users that sees an item or a provider through the recommendations that they receive
-                      from the system.
-                      By measuring and comparing the visibilities of items and providers that are recommended by various
-                      recommendation algorithms, I found that common collaborative filtering methods show popularity
-                      bias for providers similarly to items.
-                    </p>
-                    <h4>Skills learned:</h4>
-                    <ul>
-                      <li>Collecting data by webscraping and cleaning data</li>
-                      <li>Implmenting and manipulating large graph and identifying its properties</li>
-                      <li>Writing a comprehensive report to communicate technical work</li>
-                    </ul>
-                    <a href="https://github.com/jc428/multisided-recommender-bias">See the code (link to GitHub)</a>
-                    <a href="./Recommender_Network_Bias.pdf">Read the full report (pdf)</a>
-                  </div>
-                </div>
+                <ul class="list-horizontal">
+                  <li>Machine Learning</li>
+                  <li>Data Analysis</li>
+                  <li>Python</li>
+                  <li>Pandas</li>
+                </ul>
               </div>
             </div>
-            <div class="accordion-item close">
-              <div class="accordion-item-heading">
-                <h3>Love Living at Home</h3>
-              </div>
-              <div class="accordion-item-content">
-                <div class="project-row2">
-                  <div class="description">
-                    <p>Web development, Python, Flask, SQLAlchemy</p>
-                    <p>
-                      As a developer on the Love Living at Home (LLH) project, I worked on a web product that would
-                      enable
-                      staff at LLH manage their volunteers' information and service requests. LLH staff can update and
-                      modify data securely through this website.
-                      I specifically implemented the transportation requests page as a form where LLH staff
-                      can pick a date/time, location, contact information, along with other details about the request
-                      and
-                      submit it into the requests database.
-                    </p>
-                    <h4>Skills learned:</h4>
-                    <ul>
-                      <li>Implementing an efficient and intuitive UI using Python Flask</li>
-                      <li>Using Pandas and SQLAlchemy to access and modify the database</li>
-                      <li>Working in an agile software development team</li>
-                    </ul>
-                    <a href="https://cornellh4i.org/projects/love-living-at-home">Click to read more about the LLH
-                      project.</a>
-                  </div>
-                  <img src="./images/llh.png" />
+            <div class="accordion-item-content">
+              <div class="project-row1">
+                <div class="row-left">
+                  <img src="./images/predicted_vs_actual_ratings_ml_small.png"
+                    alt="Chart of the predicted ratings vs the actual ratings for the Random, baseline, SVD, and KNN recommendation algorithms." />
+                  <p>figure caption</p>
                 </div>
-              </div>
-            </div>
-            <div class="accordion-item close">
-              <div class="accordion-item-heading">
-                <h3>Avatar Game</h3>
-              </div>
-              <div class="accordion-item-content">
-                <div class="project-row1">
-                  <img src="./images/avatar_game.png" />
-                  <div class="description">
-                    <p>OCaml, Functional Programming</p>
-                    <p>
-                      As part of the course CS 3110: Functional Programming and Data Structure, I worked in a group of
-                      four to create a text-based game
-                      based on the Avatar: The Last Airbender series.
-                    </p>
-                    <h4>Skills learned:</h4>
-                    <ul>
-                      <li>Implementing an efficient and intuitive UI using Python Flask</li>
-                      <li>Using Pandas and SQLAlchemy to access and modify the database</li>
-                      <li>Working in an agile software development team</li>
-                    </ul>
-                    <a href="https://github.com/jc428/avatar-turn-based-game">GitHub Link</a>
-                  </div>
+                <div class="row-right">
+                  <p>
+                    In summer 2022 I did machine learning research at Cornell with Professor Sarah Dean.
+                    I created a graph with three node layers that represent the multiple stakeholders in a Recommender
+                    system: the providers that supply the items, the items which are recommended, and users who
+                    receive
+                    the item recommendations.
+                    I defined item and provider visibility, which is a graph-based measure that represents the
+                    number of users that sees an item or a provider through the recommendations that they receive
+                    from the system.
+                    By measuring and comparing the visibilities of items and providers that are recommended by various
+                    recommendation algorithms, I found that common collaborative filtering methods show popularity
+                    bias for providers similarly to items.
+                  </p>
+                  <h4>Skills learned:</h4>
+                  <ul>
+                    <li>Collecting data by webscraping and cleaning data</li>
+                    <li>Implmenting and manipulating large graph and identifying its properties</li>
+                    <li>Writing a comprehensive report to communicate technical work</li>
+                  </ul>
+                  <a href="https://github.com/jc428/multisided-recommender-bias" target="_blank"
+                    rel="noopener noreferrer">See the code (link to GitHub)</a>
+                  <a href="./Recommender_Network_Bias.pdf" target="_blank" rel="noopener noreferrer">Read the full
+                    report (pdf)</a>
                 </div>
               </div>
             </div>
           </div>
-      </section>
+          <div class="accordion-item close">
+            <div class="accordion-item-heading">
+              <i class="fa-solid fa-circle-chevron-down fa-lg"></i>
+              <div class="heading-text">
+                <h3>Love Living at Home</h3>
+                <ul class="list-horizontal">
+                  <li>Web Development</li>
+                  <li>Python</li>
+                  <li>Flask</li>
+                  <li>SQLAlchemy</li>
+                </ul>
+              </div>
+            </div>
+            <div class="accordion-item-content">
+              <div class="project-row2">
+                <div class="description">
+                  <p>
+                    As a developer on the Love Living at Home (LLH) project, I worked on a web product that would
+                    enable
+                    staff at LLH manage their volunteers' information and service requests. LLH staff can update and
+                    modify data securely through this website.
+                    I specifically implemented the transportation requests page as a form where LLH staff
+                    can pick a date/time, location, contact information, along with other details about the request
+                    and
+                    submit it into the requests database.
+                  </p>
+                  <h4>Skills learned:</h4>
+                  <ul>
+                    <li>Implementing an efficient and intuitive UI using Python Flask</li>
+                    <li>Using Pandas and SQLAlchemy to access and modify the database</li>
+                    <li>Working in an agile software development team</li>
+                  </ul>
+                  <a href="https://cornellh4i.org/projects/love-living-at-home" target="_blank"
+                    rel="noopener noreferrer">Click to read more about the LLH
+                    project.</a>
+                </div>
+                <img src="./images/llh.png" />
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item close">
+            <div class="accordion-item-heading">
+              <i class="fa-solid fa-circle-chevron-down fa-lg"></i>
+              <div class="heading-text">
+                <h3>Avatar Game</h3>
+                <ul class="list-horizontal">
+                  <li>OCaml</li>
+                  <li>Functional Programming</li>
+                  <li>Agile Methodology</li>
+                </ul>
+              </div>
+            </div>
+            <div class="accordion-item-content">
+              <div class="project-row1">
+                <img src="./images/avatar_game.png" alt="ascii art of the Aang from Avatar the Last Airbender" />
+                <div class="description">
+                  <p>OCaml, Functional Programming</p>
+                  <p>
+                    As part of the course CS 3110: Functional Programming and Data Structure, I worked in a group of
+                    four to create a text-based game
+                    based on the Avatar: The Last Airbender series.
+                  </p>
+                  <h4>Skills learned:</h4>
+                  <ul>
+                    <li>Implementing an efficient and intuitive UI using Python Flask</li>
+                    <li>Using Pandas and SQLAlchemy to access and modify the database</li>
+                    <li>Working in an agile software development team</li>
+                  </ul>
+                  <a href="https://github.com/jc428/avatar-turn-based-game" target="_blank"
+                    rel="noopener noreferrer">GitHub Link</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
     </section>
+
 
     <section id="leadership">
       <div class="container">
         <h1>Leadership</h1>
-        <div class="position">
-          <h3>Project Management</h3>
-          <img src="./images/pe.png" />
-          <p>
-            As project manager of the Prisoner Express project, I led the development
-            of an online archive of art and written works created by incarcerated people.
-            At the start of the project, I organized meetings with the technical lead,
-            the design lead, and our partner from Prisoner Express to identify the pain points of
-            the existing archive and desired features for the new website.
-            I then worked with the tech lead to determine the scope of the project and set a
-            detailed, weekly timeline for our semester-long development and agreed upon deadlines
-            and deliverables with our partner. During the semester, I helped onboard our five developers to
-            the React and Airtable API tech stack, facilitated communication between the developers and designers, and
-            planned and led weekly scrum meetings to ensure timely development.
-          </p>
-          <h3>Section Leading</h3>
-
+        <p>In the past few years, I have had great opportunities to take on leadership positions in student
+          organizations at Cornell University. Through managing the development of a software product
+          and leading an instrument section, I improved my communication, presentation, and time-management skills. I
+          also learned to relate better with other people and resolve interpersonal conflicts.
+        </p>
+        <div class="positions">
+          <div class="description-toggle" id="toggle_prisoner_express">
+            <img src="./images/pe.png"
+              alt="high fidelity designs of the pages of the online gallery created for the Prisoner Express project" />
+            <div class="overlay">
+              <h4>Project Manager</h4>
+              <i class="fa-solid fa-circle-plus fa-2xl"></i>
+            </div>
+          </div>
+          <div class="description-toggle" id="toggle_section_leader">
+            <img src="./images/parade.jpg" alt="" />
+            <div class="overlay">
+              <h4>Clarinet Section Leader</h4>
+              <i class="fa-solid fa-circle-plus fa-2xl"></i>
+            </div>
+          </div>
+        </div>
+        <div class="description-content-wrapper open" id="prisoner_express">
+          <div class="description-content">
+            <h3>Project Management</h3>
+            <p>
+              As project manager of the Prisoner Express project, I led the development
+              of an online archive of art and written works created by incarcerated people.
+              At the start of the project, I organized meetings with the technical lead,
+              the design lead, and our partner from Prisoner Express to identify the pain points of
+              the existing archive and desired features for the new website.
+              I then worked with the tech lead to determine the scope of the project and set a
+              detailed, weekly timeline for our semester-long development and agreed upon deadlines
+              and deliverables with our partner. During the semester, I helped onboard our five developers to
+              the React and Airtable API tech stack, facilitated communication between the developers and designers,
+              and
+              planned and led weekly scrum meetings to ensure timely development.
+            </p>
+            <a href="https://cornellh4i.org/projects/prisonsers-express" target="_blank" rel="noopener noreferrer">Read
+              more about the Prisoner Express project!</a>
+          </div>
+        </div>
+        <div class="description-content-wrapper close" id="section_leader">
+          <div class="description-content">
+            <h3>Section Leading</h3>
+            <p> this is about section leading!!</p>
+            <p>@bigrednets</p>
+          </div>
         </div>
     </section>
     <section id="values">
-      <h1>Values</h1>
-      <a href="./philosophy_of_teaching.pdf">Read my philosophy of teaching</a>
+      <div class="container">
+        <h1>Values</h1>
+        <a href="./philosophy_of_teaching.pdf">Read my philosophy of teaching</a>
+      </div>
     </section>
   </div>
   <script>
@@ -243,10 +311,39 @@
       for (i = 0; i < accItem.length; i++) {
         accItem[i].className = 'accordion-item close';
       }
+
+      console.log("toggle");
+
       if (itemClass == 'accordion-item close') {
         this.parentNode.className = 'accordion-item open';
       }
     };
+
+    var toggles = document.getElementsByClassName('description-toggle');
+    var descriptions = document.getElementsByClassName('description-content-wrapper');
+
+    for (i = 0; i < toggles.length; i++) {
+      toggles[i].addEventListener('click', toggleDesc, false);
+    };
+
+    function toggleDesc() {
+      console.log(this);
+      var curId = this.id.slice(7);
+      console.log(curId);
+      var curClass = document.getElementById(curId).className;
+      console.log(curId + ' ' + curClass);
+
+      if (curClass == 'description-content-wrapper close') {
+        document.getElementById(curId).className = 'description-content-wrapper open';
+      }
+
+      for (i = 0; i < descriptions.length; i++) {
+        if (descriptions[i].id != curId) {
+          descriptions[i].className = 'description-content-wrapper close';
+        }
+      }
+    };
+
   </script>
   <script href="assets/js/script.js"></script>
 </body>
