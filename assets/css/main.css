@@ -596,14 +596,32 @@ p {
 
 #values>.container>p {
   padding-left: 2rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
+
 
 #values>.container>p .logo {
   vertical-align: middle;
   padding-left: 1rem;
 }
 
+.values-text h3 {
+  color: var(--catawba);
+  font-weight: 600;
+  margin-bottom: 1rem;
+  padding: 0;
+}
+
+.values-text {
+  padding-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+.values-text p {
+  padding-left: 2rem;
+  padding-right: 4rem;
+  margin-bottom: 1rem;
+}
 
 section {
   padding-top: 10vh;
