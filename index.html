@@ -5,29 +5,30 @@
 <head>
   <title>Jiwoo Cheon</title>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="./assets/css/main.css" />
+  <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
   <script src="https://kit.fontawesome.com/4c43527bd5.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <nav>
     <div class="container">
-      <a href="#home">Home</a>
-      <a href="#programming">Programming Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#leadership">Leadership</a>
-      <a href="#values">Values</a>
+      <a id="home_link" href="#home">Home</a>
+      <a id="programming_link" href="#programming">Programming Skills</a>
+      <a id="projects_link" href="#projects">Projects</a>
+      <a id="leadership_link" href="#leadership">Leadership</a>
+      <a id="values_link" href="#values">Values</a>
     </div>
   </nav>
 
   <div class="main">
     <section id="home">
+      <h2>Jiwoo Cheon</h2>
+      <h4>Cornell '22, Software Engineer and Aspiring Teacher</h4>
       <div id="heading">
         <img id="headshot" src="./images/jiwoo_headshot.JPG" alt="headshot image of Jiwoo" />
         <div id="intro">
-          <h2>Jiwoo Cheon</h2>
-          <h4>Cornell '22, Software Engineer and Aspiring Teacher</h4>
           <p>
             I'm a senior studying Computer Science with a minor in math at Cornell University.
             On campus, I'm a teaching assistant for the Introduction to Algorithms course, and I'm one of the current
@@ -51,6 +52,10 @@
             </a>
           </div>
         </div>
+      </div>
+      <div class="down-arrow">
+        <a href="#programming"><i class="fa-solid fa-circle-down fa-2x fa-bounce"
+            style="--fa-animation-delay: 10s;"></i></a>
       </div>
     </section>
 
@@ -80,29 +85,33 @@
             <h4>React/JavaScript/HTML/CSS</h4>
             <p>
               As a developer on Hack4Impact and a SWE intern at T-Mobile, I gained two years of experience
-              in front-end development using React as well as plain HTML/CSS/JavaScript.
+              in front-end development using <strong>React</strong> as well as plain
+              <strong>HTML/CSS/JavaScript</strong>.
               During my internship at T-Mobile, I built a real-time data visualization dashboard
-              using React and JavaScript with a SQL database.
+              using <strong>React</strong> and <strong>JavaScript</strong> with a <strong>SQL</strong> database.
             </p>
           </div>
           <div class="skill-col">
             <img src="./images/java_logo.png" />
             <h4>Java</h4>
-            <p>I have <strong>3 years</strong> of experience with Java. Since first learning Java
+            <p>I have <strong>3 years</strong> of experience with <strong>Java</strong>. Since first learning
+              <strong>Java</strong>
               in the Object-Oriented Programming course (CS 2110) at Cornell, I programmed
-              an Android application with Java during my work at SmithMicro.
-              I have also used Java to implement algorithms for the Introduction to
+              an Android application with <strong>Java</strong> during my work at SmithMicro.
+              I have also used <strong>Java</strong> to implement algorithms for the Introduction to
               Algorithms course, and as part of my responsibilites as a teaching assistant,
-              I helped students debug their Java code for their Algorithm homeworks.
+              I helped students debug their <strong>Java</strong> code for their Algorithm homeworks.
             </p>
           </div>
           <div class="skill-col">
-            <img src="./images/box.png" />
+            <img src="./images/algo.png" />
             <h4>Algorithm Design and Analysis</h4>
             <p>
-              I've been an undergraduate teaching assistant for the Introduction to Algorithms course at Cornell for
+              I've been an undergraduate teaching assistant for the <strong>Introduction to Algorithms</strong> course
+              at Cornell for
               two semesters. Through teaching and answering student questions, I have gained a deeper understanding of
-              algorithm techniques, such as greedy and dynamic programming, and applying them to solve novel problems.
+              <strong>algorithm techniques</strong>, such as greedy and dynamic programming, and applying them to solve
+              novel problems.
             </p>
           </div>
         </div>
@@ -111,7 +120,6 @@
     <section id="projects">
       <div class="container">
         <h1>Projects</h1>
-        <p>Click below to learn more about some of my projects!</p>
         <div class="accordion-wrapper">
           <div class="accordion-item open">
             <div class="accordion-item-heading">
@@ -131,7 +139,11 @@
                 <div class="row-left">
                   <img src="./images/predicted_vs_actual_ratings_ml_small.png"
                     alt="Chart of the predicted ratings vs the actual ratings for the Random, baseline, SVD, and KNN recommendation algorithms." />
-                  <p>figure caption</p>
+                  <p>Predicted vs Actual Ratings: User ratings predicted by each of the algorithms (left to right:
+                    Random, Baseline, SVD, KNN) are
+                    plotted against the actual ratings by users in the
+                    ml-small data set. I used matplotlib to produce the chart.
+                  </p>
                 </div>
                 <div class="row-right">
                   <p>
@@ -147,16 +159,13 @@
                     recommendation algorithms, I found that common collaborative filtering methods show popularity
                     bias for providers similarly to items.
                   </p>
-                  <h4>Skills learned:</h4>
-                  <ul>
-                    <li>Collecting data by webscraping and cleaning data</li>
-                    <li>Implmenting and manipulating large graph and identifying its properties</li>
-                    <li>Writing a comprehensive report to communicate technical work</li>
-                  </ul>
-                  <a href="https://github.com/jc428/multisided-recommender-bias" target="_blank"
-                    rel="noopener noreferrer">See the code (link to GitHub)</a>
-                  <a href="./Recommender_Network_Bias.pdf" target="_blank" rel="noopener noreferrer">Read the full
-                    report (pdf)</a>
+
+                  <p>View the codebase or read the full report:
+                    <a href="https://github.com/jc428/multisided-recommender-bias" target="_blank"
+                      rel="noopener noreferrer"><img src="./images/git_logo.png" class="logo" /></a>
+                    <a href="./Recommender_Network_Bias.pdf" target="_blank" rel="noopener noreferrer"><img
+                        src="./images/pdf.png" class="logo" /></a>
+                  </p>
                 </div>
               </div>
             </div>
@@ -176,28 +185,36 @@
             </div>
             <div class="accordion-item-content">
               <div class="project-row2">
-                <div class="description">
+                <div class="row-left">
                   <p>
-                    As a developer on the Love Living at Home (LLH) project, I worked on a web product that would
-                    enable
-                    staff at LLH manage their volunteers' information and service requests. LLH staff can update and
-                    modify data securely through this website.
+                    Love Living at Home (LLH) is a nonprofit organization that provide services to help seniors
+                    live independently in their homes. They manage their many volunteers through an online system, which
+                    was previously
+                    hosted on Club Express, which struggles to handle their needs.
+                    As a developer in Hack4Impact, I was a member of the development team that partnered with LLH to
+                    create a new product that would enable staff at LLH to manage their volunteers' information and
+                    service requests.
+                    LLH staff can update and modify data securely and efficiently through this website.
                     I specifically implemented the transportation requests page as a form where LLH staff
                     can pick a date/time, location, contact information, along with other details about the request
                     and
                     submit it into the requests database.
+                    As we used the Flask framework, I developed both the frontend and the backend of the transportation
+                    requests form.
                   </p>
-                  <h4>Skills learned:</h4>
-                  <ul>
-                    <li>Implementing an efficient and intuitive UI using Python Flask</li>
-                    <li>Using Pandas and SQLAlchemy to access and modify the database</li>
-                    <li>Working in an agile software development team</li>
-                  </ul>
-                  <a href="https://cornellh4i.org/projects/love-living-at-home" target="_blank"
-                    rel="noopener noreferrer">Click to read more about the LLH
-                    project.</a>
+                  <p>Learn more about the LLH project: <a href="https://cornellh4i.org/projects/love-living-at-home"
+                      target="_blank" rel="noopener noreferrer"><img src="./images/web_logo.png" class="logo" /></a></p>
                 </div>
-                <img src="./images/llh.png" />
+                <div class="row-right">
+                  <img src="./images/llh.png" />
+                  <p>Admin Dashboard Page: The main admin dashboard of the LLH system shows buttons that directs the
+                    user to the page
+                    in the system with the request forms or information the user needs based on their task. The buttons
+                    are organized intro three functional categories
+                    (Account Management, System Configuration, and Additional Actions).
+                    The Admin Dashboard Page also demonstrates the simple white and blue theme the designers chose for
+                    the system.</p>
+                </div>
               </div>
             </div>
           </div>
@@ -215,22 +232,41 @@
             </div>
             <div class="accordion-item-content">
               <div class="project-row1">
-                <img src="./images/avatar_game.png" alt="ascii art of the Aang from Avatar the Last Airbender" />
-                <div class="description">
-                  <p>OCaml, Functional Programming</p>
-                  <p>
-                    As part of the course CS 3110: Functional Programming and Data Structure, I worked in a group of
-                    four to create a text-based game
-                    based on the Avatar: The Last Airbender series.
+                <div class="row-left">
+                  <img src="./images/avatar_game_code.png" class="code"
+                    alt="ascii art of the Aang from Avatar the Last Airbender" />
+                  <p>Battle End: The battle_end function updates the player's states and allows the player to choose a
+                    new move
+                    that they can replace an old move with. I used pattern matching to efficiently update the desired
+                    moves and strings, according to user input.
+                    As the game takes in user input, it is important to handle errors and exceptions that may arise
+                    from incorrect or unexpected user input.
                   </p>
-                  <h4>Skills learned:</h4>
-                  <ul>
-                    <li>Implementing an efficient and intuitive UI using Python Flask</li>
-                    <li>Using Pandas and SQLAlchemy to access and modify the database</li>
-                    <li>Working in an agile software development team</li>
-                  </ul>
-                  <a href="https://github.com/jc428/avatar-turn-based-game" target="_blank"
-                    rel="noopener noreferrer">GitHub Link</a>
+                </div>
+                <div class="row-right">
+                  <p>
+                    As part of the course CS 3110: Functional Programming and Data Structure, I worked in a team of
+                    four students to create a text-based game based on the Avatar: The Last Airbender series.
+                    We designed the game to have single and multi player modes, as well as a continuous storyline
+                    following
+                    the original series. In the single player mode, the player encounters a new opponent at each new
+                    "episode" that they must beat
+                    using a set of moves in order to move on to the next episode.
+                    In the multi player mode, up to 4 players participate in a 2 vs 2 battle against other players or
+                    AI.
+                    As we implemented the game, we focused on modularity to reuse as much code as possible across all of
+                    the different modes of playing.
+                    We wrote all of the story dialogues and the character details in a standard JSON format to make the
+                    game
+                    easily expandable with more stories and characters.
+                    I specifically developed the build files, the testing interface, as well as the main gameplay of
+                    both the single and multi player modes.
+                  </p>
+
+                  <p>View the codebase to install and play the game: <a
+                      href="https://github.com/jc428/avatar-turn-based-game" target="_blank"
+                      rel="noopener noreferrer"><img src="./images/git_logo.png" class="logo" /></a></p>
+
                 </div>
               </div>
             </div>
@@ -247,57 +283,97 @@
           and leading an instrument section, I improved my communication, presentation, and time-management skills. I
           also learned to relate better with other people and resolve interpersonal conflicts.
         </p>
-        <div class="positions">
-          <div class="description-toggle" id="toggle_prisoner_express">
-            <img src="./images/pe.png"
-              alt="high fidelity designs of the pages of the online gallery created for the Prisoner Express project" />
-            <div class="overlay">
-              <h4>Project Manager</h4>
-              <i class="fa-solid fa-circle-plus fa-2xl"></i>
+        <div class="positions-wrapper">
+          <div class="positions">
+            <div class="description-toggle" id="toggle_prisoner_express">
+              <img src="./images/pe.png"
+                alt="high fidelity designs of the pages of the online gallery created for the Prisoner Express project" />
+              <div class="overlay">
+                <h4>Project Manager</h4>
+                <i class="fa-solid fa-circle-plus fa-2xl"></i>
+              </div>
+            </div>
+            <div class="description-toggle" id="toggle_section_leader">
+              <img src="./images/parade.jpg" alt="" />
+              <div class="overlay">
+                <h4>Clarinet Section Leader</h4>
+                <i class="fa-solid fa-circle-plus fa-2xl"></i>
+              </div>
             </div>
           </div>
-          <div class="description-toggle" id="toggle_section_leader">
-            <img src="./images/parade.jpg" alt="" />
-            <div class="overlay">
-              <h4>Clarinet Section Leader</h4>
-              <i class="fa-solid fa-circle-plus fa-2xl"></i>
+          <div class="description-wrapper">
+            <div class="description-item close" id="prisoner_express">
+              <div class="description-content">
+                <i class="fa-solid fa-circle-xmark fa-lg"></i>
+                <h3>Prisoner Express: Project Manager</h3>
+                <p>
+                  As project manager of the <a href="https://cornellh4i.org/projects/prisonsers-express" target="_blank"
+                    rel="noopener noreferrer">Prisoner Express project</a>, I led the development
+                  of an online archive of art and written works created by incarcerated people.
+                  At the start of the project, I organized meetings with the technical lead,
+                  the design lead, and our partner from Prisoner Express to identify the pain points of
+                  the existing archive and desired features for the new website.
+                  I then worked with the tech lead to determine the scope of the project and set a
+                  detailed, weekly timeline for our semester-long development and agreed upon deadlines
+                  and deliverables with our partner. During the semester, I helped onboard our five developers to
+                  the React and Airtable API tech stack, facilitated communication between the developers and designers,
+                  and planned and led weekly scrum meetings to ensure timely development.
+                </p>
+
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="description-content-wrapper open" id="prisoner_express">
-          <div class="description-content">
-            <h3>Project Management</h3>
-            <p>
-              As project manager of the Prisoner Express project, I led the development
-              of an online archive of art and written works created by incarcerated people.
-              At the start of the project, I organized meetings with the technical lead,
-              the design lead, and our partner from Prisoner Express to identify the pain points of
-              the existing archive and desired features for the new website.
-              I then worked with the tech lead to determine the scope of the project and set a
-              detailed, weekly timeline for our semester-long development and agreed upon deadlines
-              and deliverables with our partner. During the semester, I helped onboard our five developers to
-              the React and Airtable API tech stack, facilitated communication between the developers and designers,
-              and
-              planned and led weekly scrum meetings to ensure timely development.
-            </p>
-            <a href="https://cornellh4i.org/projects/prisonsers-express" target="_blank" rel="noopener noreferrer">Read
-              more about the Prisoner Express project!</a>
-          </div>
-        </div>
-        <div class="description-content-wrapper close" id="section_leader">
-          <div class="description-content">
-            <h3>Section Leading</h3>
-            <p> this is about section leading!!</p>
-            <p>@bigrednets</p>
+            <div class="description-item close" id="section_leader">
+              <div class="description-content">
+                <div class="close-icon">
+                  <i class="fa-solid fa-circle-xmark fa-lg"></i>
+                </div>
+                <h3>Big Red Marching Band: Section Leader</h3>
+                <p>In 2022, I co-lead the clarinet section of the Big Red Marching Band (BRMB) at Cornell along with my
+                  co-section leader.
+                  I helped recruitment efforts at the start of each semester by updating section social media, reaching
+                  out to prospective students at Cornell Days
+                  performances, and greeting and welcoming new members at events during Orientation Week. During the
+                  football season, I lead the 20-25 active members of
+                  the clarinet section at all music and marching rehearsals, ensuring that all members have necessary
+                  instrument equipment and information
+                  to engage in the rehearsals.
+                  Beyond these official duties, I fostered an actively inclusive and welcoming environment in the
+                  clarinet section. I coordinated a forum to discuss diversity and inclusivity expectations for all
+                  members and asserted
+                  those values in all of my communication with the section. When members approached me with concerns or
+                  conflicts with other members of the section,
+                  I listened to them and worked with other members as needed to resolve the issue and maintain a safe
+                  and comfortable environment for all members.
+                  More regularly, I sent out weekly emails to notify members of upcoming events and to encourage
+                  attendance at
+                  rehearsals. In the spring, I organized and lead weekly
+                  section events to continue section bonding and socialization despite the lack of rehearsals and
+                  performances in the off-season.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
     </section>
     <section id="values">
       <div class="container">
         <h1>Values</h1>
-        <a href="./philosophy_of_teaching.pdf">Read my philosophy of teaching</a>
+        <p>In addition to my interests in tech, I've always been passionate about education and strived to be a teacher.
+        </p>
+        <p>Read my philosophy of teaching: <a href="./philosophy_of_teaching.pdf" target="_blank"
+            rel="noopener noreferrer"><img src="./images/pdf.png" class="logo" /></a></p>
       </div>
     </section>
+
+    <footer>
+      <div class="container">
+        <p>
+          <a href="https://www.linkedin.com/in/jiwoo-cheon" target="_blank" rel="noopener noreferrer"><img
+              src="./images/linkedin-logo.png" class="logo" /></a>
+        </p>
+        <p>jc2762@cornell.edu</p>
+      </div>
+    </footer>
   </div>
   <script>
     var accItem = document.getElementsByClassName('accordion-item');
@@ -320,29 +396,65 @@
     };
 
     var toggles = document.getElementsByClassName('description-toggle');
-    var descriptions = document.getElementsByClassName('description-content-wrapper');
+    var descriptions = document.getElementsByClassName('description-item');
 
     for (i = 0; i < toggles.length; i++) {
       toggles[i].addEventListener('click', toggleDesc, false);
     };
 
     function toggleDesc() {
-      console.log(this);
       var curId = this.id.slice(7);
-      console.log(curId);
       var curClass = document.getElementById(curId).className;
-      console.log(curId + ' ' + curClass);
 
-      if (curClass == 'description-content-wrapper close') {
-        document.getElementById(curId).className = 'description-content-wrapper open';
+      if (curClass == 'description-item close') {
+        document.getElementById(curId).className = 'description-item open';
       }
 
       for (i = 0; i < descriptions.length; i++) {
         if (descriptions[i].id != curId) {
-          descriptions[i].className = 'description-content-wrapper close';
+          descriptions[i].className = 'description-item close';
         }
       }
     };
+
+    var closeBtns = document.getElementsByClassName('fa-solid fa-circle-xmark fa-lg');
+
+    for (i = 0; i < closeBtns.length; i++) {
+      closeBtns[i].addEventListener('click', closeDesc, false)
+    };
+
+    function closeDesc() {
+      for (i = 0; i < descriptions.length; i++) {
+        descriptions[i].className = 'description-item close';
+      }
+    };
+
+    // document.onscroll = function () {
+    //   const nav = document.querySelector('nav');
+    //   // const home = document.querySelector('#home');
+    //   // const programming = document.querySelector('#programming');
+    //   // const projects = document.querySelector('#projects');
+    //   // const page
+
+    //   const sections = document.getElementsByTagName('section');
+    //   max = Number.MAX_SAFE_INTEGER;
+    //   selected;
+    //   for (i = 0; i < sections.length; i++) {
+    //     if (sections[i].getBoundingClientRect().top <= 0) {
+    //       selected = max < sections[i].getBoundingClientRect().top ? sections[i] : selected;
+    //       console.log(sections[i]);
+    //     }
+    //     document.getElementById(sections[i].id + '_link').className = 'selected';
+    //   }
+
+      // for (i = 0; i < sections.length; i++) {
+      //   if (sections[i] == selected) {
+      //     document.getElementById(sections[i].id + '_link').className = 'selected';
+      //   } else {
+      //     document.getElementById(sections[i].id + '_link').className = '';
+      //   }
+      // }
+    // }
 
   </script>
   <script href="assets/js/script.js"></script>
